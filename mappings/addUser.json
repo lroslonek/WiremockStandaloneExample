@@ -1,0 +1,20 @@
+{
+  "request":
+    {
+      "urlPattern": "/addNewUser",
+      "method": "POST",
+      "bodyPatterns" : [{
+        "equalToJson" : "{\n  \"login\" : \"lukaszroslonek\",\n  \"www\" : \"www.google.com\"\n}"
+      }]
+    },
+
+  "response":
+    {
+      "status": 200,
+      "headers":
+        {
+          "Content-Type" : "application/json"
+        },
+      "body": "{\"id\": \"2\", \"login\": \"lukaszroslonek\", \"www\" : \"www.google.com\"}"
+    }
+}
